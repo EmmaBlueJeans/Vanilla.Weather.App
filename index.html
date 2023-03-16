@@ -17,36 +17,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>City Name</h1>
-        <ul>
-          <li>DayoftheWeek Time</li>
-          <li>Condition</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="http://openweathermap.org/img/w/10d.png"
-              alt="condition"
-            />
-            12 ℃|℉
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>City Name</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2km/h</li>
+              <li>DayoftheWeek Time</li>
+              <li>Condition</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temp">
+                <img
+                  src="http://openweathermap.org/img/w/10d.png"
+                  alt="condition"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong> 12 </strong
+                  ><span class="units">℃| <a href="#">℉</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/EmmaBlueJeans/Vanilla.Weather.App">
+          Open Source Code
+        </a>
+        by Emma Dennis
+      </small>
     </div>
-    <small>
-      <a href="https://github.com/EmmaBlueJeans/Vanilla.Weather.App">
-        Open Source Code
-      </a>
-      by Emma Dennis
-    </small>
     <script src="app.js"></script>
   </body>
 </html>
