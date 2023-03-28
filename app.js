@@ -31,7 +31,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
   fahrenheitTemp = response.data.temperature.current;
-
+  console.log(response.data);
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
